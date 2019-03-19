@@ -1,0 +1,258 @@
+/* NORMALISE STYLES */
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* GENERAL STYLES */
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+	font-size: 1.6rem; 
+}
+
+h1,
+h2,
+h3,
+ul,
+p,
+a {
+	margin: 0;
+	padding: 0; /* Good idea? Easier way to do this? */
+}
+
+h2.logo {
+	font-size: 3.8rem;
+	color: #005769;
+	font-weight: 700;
+	display: block;
+	float: left;
+}
+
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+/* HEADER STYLES */
+
+header {
+	background: url(../images/image-main.jpeg) no-repeat fixed center top;
+	background-size: cover; /* Why won't this work in shorthand? */
+	min-height: 95vh;
+	padding-top: 78px;
+}
+
+h1 {
+	font-size: 6.8rem;
+	color: #333;
+	display: block;
+	max-width: 500px;
+	padding-top: 25%; /* Padding instead of margin because no footprint ?? */
+}
+
+nav {
+	display: block;
+	float: right;
+}
+
+.hm-main li {
+	float: left;
+}
+
+.btn {
+	display: block;
+	max-width: 158px;
+	margin-left: 10px; 
+	padding: 16px 22px;
+	border-radius: 10px;
+	font-size: 1.9rem;
+	color: #333;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0 auto;
+	transition: all ease-out 0.3s; /* Transition only on base element MUST BE IN THIS ORDER not all 0.3s ease-out */
+}
+
+.btn:hover {
+	background-color: #16D6D1;
+}
+
+.sub-menu {
+	display: none;
+	position: absolute;
+	transition: all ease 0.3s ; /* This transaction doesn't work */
+} 
+
+.sub-menu li {
+	float: none;
+	background-color: #F6F8FA;
+	border-radius: 10px;
+	padding: 16px 22px;
+	position: absolute;
+	width: 150px;
+	left: -22px;
+	top: 17px;
+	transition: all ease 0.3s;
+}
+
+.sub-menu li:hover {
+	background-color: #16D6D1;
+	background-color: none;
+}
+
+.sub-menu li:nth-child(2) {
+	top: 71px;
+}
+
+.sub-menu li a {
+	color: #000;
+	text-align: center;
+}
+
+.dropdown:hover .sub-menu {
+	display: block;
+	transition: all 0.3s ease-out; /* This transaction doesn't work */
+}
+
+/* MAIN STYLES */
+
+main .wrapper {
+	padding: 143px 0;
+/*	background-color: tomato;*/
+}
+
+h2 {
+	font-size: 3.9rem;
+	color: #333;
+	font-weight: 700;
+	display: block;
+	margin: 0 auto;
+	max-width: 450px;
+	padding-bottom: 25px;
+}
+
+h3 {
+	font-size: 2.2rem;
+	color: #777;
+	text-transform: uppercase;
+	padding: 42px 0;
+}
+
+.box {
+	display: block;
+	float: left;
+	margin: 18px;
+}
+
+.two-col,
+.three-col {
+	clear: both;
+}
+
+/* For the life of me, I can't figure out how to make the columns align!!! */
+.two-col .box-tall {
+	max-width: calc((100% / 3) - 18px);
+}
+
+.two-col .box-wide {
+	max-width: calc((100% / 3) * 2 - 18px);
+	background-color: #F6F8FA;
+	text-align: center;
+	min-height: 592px;
+}
+
+.three-col .box-tall {
+	max-width: calc((100% - 72px) / 3);
+}
+
+.two-col .box:nth-child(odd) {
+	margin-left: 0;
+}
+
+.two-col .box:nth-child(even) {
+	margin-right: 0;
+}
+
+.three-col .box:nth-child(3n) { /* Selects every 3rd child*/
+	margin-right: 0;
+}
+
+.three-col .box:nth-child(3n+1) { /* Selects every 3rd child, starting at 1 */
+	margin-left: 0;
+}
+
+/* FOOTER STYLES */
+
+p {
+	font-size: 2rem;
+}
+
+footer {
+	background-color: #F6F8FA;
+	padding-top: 70px;
+	min-height: 440px;
+}
+
+footer nav {
+	text-align: left;
+	position: absolute;
+}
+
+.fm-main {
+	left: 440px;
+}
+
+.fm-social {
+	left: 600px;
+}
+
+footer a {
+font-size: 1.9rem;
+font-weight: 700;
+text-transform: uppercase;
+color: #333;
+padding: 20px;
+display: block;
+transition: all 0.3s ease-out;
+}
+
+footer a:hover {
+color: #16D6D1;
+transition: all 0.3s ease-out;
+}
+
+.f-text {
+	float: right;
+	display: block;
+	max-width: 330px;
+	line-height: 3.5rem;
+	color: #333;
+}
+
+.copyright {
+	clear: both;
+	padding: 20px;
+	border-top: 1px solid grey;
+	position: relative;
+	top: 150px;
+	color: #777;
+}
